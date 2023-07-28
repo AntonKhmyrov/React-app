@@ -1,0 +1,11 @@
+.inputRadio {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.inputRadio input {
+    border: none;
+    width: 15px;
+    height: 15px;
+}
