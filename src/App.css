@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.App {
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: inset 0 0 5px 5px red;
+    border-radius: 20px;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    padding: 25px;
+    padding-bottom: 0px;
+    gap: 25px;
+
+}
+
+/* form */
+
+.form {
+    display: flex;
+    gap: 5px;
+
+}
+
+.form input {
+    width: 100%;
+    font-size: 24px;
+    background-color: #80808012;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1px 0px gray;
+    padding: 10px;
+}
+
+.submit-button {
+    text-align: center;
+    border-radius: 6px;
+}
+
+.submit-button .plus {
+    display: inline-block;
+    height: 100%;
+    color: white;
+    font-size: 40px;
+
+    background-color: rgb(5, 201, 5);
+    border-radius: 6px;
+    padding: 3px 4px;
+    transition: all 0.3 ease;
+}
+
+.plus:active {
+    transform: scale(0.96);
+}
+
+/* list - list_item */
+
+.list {
+    max-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    gap: 10px;
+    padding: 5px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 5px;
+    box-shadow: 0 0 5px 0.01px black;
+    cursor: pointer;
+}
+
+.completed-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: green;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 5px;
+    box-shadow: 0 0 5px 0.01px black;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+
+.item-button .update,
+.delete,
+.upgrade {
+    display: inline-block;
+    height: 100%;
+    color: gray;
+    font-size: 30px;
+
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.update:active {
+    color: green;
+}
+
+.upgrade:active {
+    color: blueviolet;
+}
+
+.delete:active {
+    color: red;
+}
+
+/* buttons */
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* .button:hover {} */
+
+.button {
+    color: blueviolet;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+}
+
+.button:active {
+    color: white;
+    background-color: blueviolet;
+    transform: scale(0.98);
+}
+
+.footer-btn-box {
+    position: sticky;
+    bottom: 15px;
+    width: 100%;
+
+}
+
+.update-input {
+    width: 100%;
+    font-size: 14px;
+    background-color: #80808012;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1px 0px gray;
+    padding: 10px;
+}
