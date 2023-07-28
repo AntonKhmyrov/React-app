@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Quiz.css'; // Make sure to import the CSS file correctly
+import './Quiz.css';
 
 const Quiz = ({ questions }) => {
   const [currentStep, setCurrentStep] = useState(0);
