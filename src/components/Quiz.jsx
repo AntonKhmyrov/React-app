@@ -27,18 +27,24 @@ const Quiz = ({ questions }) => {
 		{currentStep === questions.length ? <Finishd reloadQuiz={reloadQuiz}/> :	
 
 		<div className='body'>
-			<span className='quiest'>{currentStep + 1}/5</span>
-			<h1 className='title'>{questions[currentStep].question}</h1>
+			<span className='quiest'>Question {currentStep + 1} of 5</span>
+			<div className='title-box'>
+				<img className='image' src="../../public/quiz.svg" alt="question" />
+				<h2 className='title'>{questions[currentStep].question}</h2>
+			</div>
 			<ul className='list'>
-			{questions[currentStep].variants.map((answer, index) => (
-				<li
-				className={currentVariantIndex === index ? 'itemDisplay' : 'item'}
-				key={answer}
-				onClick={() => onVariantClick(index, answer)}
-				>
-				{answer}
-				</li>
-			))}
+				{questions[currentStep].variants.map((answer, index) => (
+					<li
+						className={currentVariantIndex === index ? 'itemDisplay' : 'item'}
+						key={answer}
+						onClick={() => onVariantClick(index, answer)}
+					>
+					{answer}
+					<span className={currentVariantIndex === index ? 'icon-shadow' : 'icon'}>
+						emoji_objects
+					</span>
+					</li>
+				))}
 			</ul>
 
 			{correctAnswer ? (
@@ -50,7 +56,6 @@ const Quiz = ({ questions }) => {
 			)}
 
 		</div>}
-
 		</>
 	);
 };
