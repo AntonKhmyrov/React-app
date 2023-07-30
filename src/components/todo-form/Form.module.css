@@ -1,0 +1,40 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    gap: 5px;
+}
+
+.headerTitle {
+    font-size: 26px;
+    color: rgb(10, 170, 10);
+    padding: 10px;
+}
+
+.body input {
+    width: 100%;
+    background-color: rgba(239, 234, 234, 0.337);
+    box-shadow: inset 0 0 2px 2px black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.body input:focus {
+    box-shadow: inset 0 0 2px 2px rgba(44, 44, 255, 0.687);
+}
+
+.body button {
+    font-size: 40px;
+    line-height: 50%;
+    color: #FFF;
+    background-color: rgba(44, 44, 255, 0.687);
+    border-radius: 4px;
+    padding: 9px 10px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.body button:hover {
+    background-color: rgba(32, 32, 149, 0.687);
+}

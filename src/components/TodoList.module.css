@@ -1,0 +1,21 @@
+.body {
+    max-width: 440px;
+    width: 100%;
+    min-height: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 5px black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.headerTitle {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(44, 44, 255, 0.687);
+}
