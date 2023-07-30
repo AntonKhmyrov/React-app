@@ -63,6 +63,10 @@
     background-color: #2620cc9f;
 }
 
+.item:active {
+    transform: scale(0.97);
+}
+
 .itemDisplay {
     background-color: green;
 }
@@ -71,4 +75,41 @@
     font-weight: 600;
     font-size: 36px;
     text-align: center;
+}
+
+.finishd-display {
+    width: 50%;
+    height: 200px;
+    background-color: #d34022;
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.finishd-display h2 {
+    font-size: 30px;
+}
+
+.finishd-display button {
+    width: 80%;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    box-shadow: 0 0 5px 5px black;
+    padding: 10px 20px;
+    transition: all .2s ease;
+}
+
+.finishd-display button:hover {
+    box-shadow: none;
+}
+
+.finishd-display button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 1px 1px black;
 }

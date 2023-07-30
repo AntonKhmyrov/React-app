@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Quiz from './components/Quiz'
 import { data } from './const'
 
