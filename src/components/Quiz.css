@@ -129,7 +129,6 @@
 
 .finishd-display {
     width: 50%;
-    height: 200px;
     background-color: rgba(255, 108, 62, 1);
     color: rgb(0, 0, 0);
     text-align: center;
@@ -160,5 +159,50 @@
 
 .finishd-display button:hover {
     color: rgb(0, 0, 0);
+    background-color: rgba(0, 163, 255, 1);
     box-shadow: none;
+}
+
+/* start-page */
+
+.start-page {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.name-box,
+.option-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    gap: 10px;
+}
+
+.option-box select {
+    position: absolute;
+    width: 48%;
+    font-size: 20px;
+    cursor: pointer;
+
+    bottom: 0;
+    right: 0;
+}
+
+.start-btn {
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(255, 108, 62, 1);
+    padding: 10px 20px;
+}
+
+.start-btn:hover {
+    background-color: rgba(0, 163, 255, 1);
 }

@@ -3,13 +3,13 @@ export const data = {
         {
             question:
                 "Какой метод жизненного цикла отрабатывает один раз при монтировании компоненты?",
-            variants: [ 
+            variants: [
                 "componentDidMount",
                 "componentWillUnmount",
                 "shouldComponentUpdate",
                 "componentDidUpdate",
             ],
-            correctVariant: "componentDidMount", 
+            correctVariant: "componentDidMount",
         },
         {
             question: "Что такое React.js",
