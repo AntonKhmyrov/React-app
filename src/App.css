@@ -4,15 +4,8 @@
     padding: 0;
 }
 
-ul,
-li {
-    list-style: none;
-}
-
-button {
-    border: none;
-    outline: none;
-    cursor: pointer;
+body {
+    font-family: monospace;
 }
 
 .App {
@@ -31,6 +24,23 @@ button {
     padding-bottom: 0px;
     gap: 25px;
 
+}
+
+.count-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.all-task {
+    color: green;
+}
+
+.completed-task {
+    color: red;
 }
 
 /* form */
@@ -114,6 +124,8 @@ button {
     cursor: pointer;
 }
 
+
+
 .completed-item {
     display: flex;
     justify-content: space-between;
@@ -127,6 +139,10 @@ button {
     cursor: pointer;
 }
 
+.item p,
+.completed-item p {
+    font-size: 20px;
+}
 
 .item-button .update,
 .delete,

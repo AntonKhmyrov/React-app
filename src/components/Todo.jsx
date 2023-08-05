@@ -86,9 +86,9 @@ class Todo extends Component {
         return (
             <div className="todo">
                 <Form ref={this.formRef} onAddTask={this.handleAddTask} />
-                <div>
-                    <div>счетчик существующих задач --- {this.state.initialData.length}</div>
-                    <div>счетчик завершенных задач --- {this.calculateCompletedTasksCount()}</div>
+                <div className="count-box">
+                    <div className='all-task'>Existing tasks: {this.state.initialData.length}</div>
+                    <div className="completed-task">Completed tasks: {this.calculateCompletedTasksCount()}</div>
                 </div>
                 <List
                     initialData={this.state.initialData}
